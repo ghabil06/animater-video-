@@ -115,7 +115,7 @@ def reverb(x, size=2.0, wet=0.25, seed=7, damp=5000):
         ir = lp(ir, damp); ir[: secs(0.012)] *= np.linspace(0, 1, secs(0.012))[:, None]
         _irs[key] = ir / np.sqrt((ir ** 2).sum(axis=0, keepdims=True)) * 0.5
     ir = _irs[key]; x = as_stereo(x)
-    y = np.stack([signal.oaconvolve(x[:, c], ir[:, c])[: len(x)] for c in range(2)], axis=1)
+    y = np.stack([signal.fftconvolve(x[:, c], ir[:, c], mode='full')[: len(x)] for c in range(2)], axis=1)
     return (x * (1 - wet) + y * wet * 2).astype(np.float32)
 
 

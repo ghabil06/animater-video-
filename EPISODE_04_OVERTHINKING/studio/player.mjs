@@ -3,10 +3,10 @@
 // Everything the renderer needs is exported from here: boot(), prepareGrade(), png(), jpeg().
 import fs from 'node:fs';
 import path from 'node:path';
-import { pathToFileURL } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 import { createCanvas, GlobalFonts } from '@napi-rs/canvas';
 
-const ROOT = path.dirname(new URL(import.meta.url).pathname);
+const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const PROJECT = process.env.MP_PROJECT || path.resolve(ROOT, '..');
 const FONTS = path.join(ROOT, 'assets', 'fonts');
 
@@ -176,7 +176,7 @@ function paint(frame) {
     g.fillStyle = '#0e1118'; g.fillRect(0, 0, E.W, E.H);
   } else {
     try { def.draw(g, local, info); }
-    catch (err) { console.error(`DRAW ERROR ${shot.id} @${t.toFixed(2)}`, err.message); }
+    catch (err) { console.error(`DRAW ERROR ${shot.id} @${t.toFixed(2)}`, err.stack); }
   }
   g.restore();
   if (!process.env.MP_RAW && !process.env.MP_NOBLOOM) applyBloom(g, canvas.width, canvas.height);

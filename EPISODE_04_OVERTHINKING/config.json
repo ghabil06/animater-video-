@@ -1,0 +1,24 @@
+{
+ "title": "Why Does Your Brain Make You Overthink?",
+ "aspect": "16:9",
+ "resolution": "1080p",
+ "fps": 24,
+ "style": "dusk",
+ "voiceover": "input/voiceover.wav",
+ "script": "input/script.txt",
+ "duration": 434.28,
+ "captions": false,
+ "bars": "wide",
+ "fadeIn": 0.5,
+ "fadeOut": 0.8,
+ "music": {
+  "enabled": true,
+  "gainDb": -18
+ },
+ "sfx": {
+  "enabled": true,
+  "gainDb": -6
+ },
+ "loudness": -14
+}
+

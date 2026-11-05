@@ -1,0 +1,1696 @@
+{
+ "title": "Why Does Your Brain Make You Overthink?",
+ "duration": 434.415,
+ "shots": [
+  {
+   "id": "s001",
+   "start": 0.0,
+   "end": 6.832,
+   "line": "Last Tuesday, you said something to a friend. It was small. A joke. A pause.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s002",
+   "start": 6.832,
+   "end": 10.28,
+   "line": "A sentence that came out slightly wrong.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s003",
+   "start": 10.28,
+   "end": 15.095,
+   "line": "And hours later, lying in the dark, you are still there.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s004",
+   "start": 15.095,
+   "end": 18.856,
+   "line": "You replay the conversation, word by word.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s005",
+   "start": 18.856,
+   "end": 21.489,
+   "line": "You wonder if they noticed.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s006",
+   "start": 21.489,
+   "end": 25.852,
+   "line": "You imagine ten different ways it could have gone.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s007",
+   "start": 25.852,
+   "end": 28.711,
+   "line": "And then you imagine ten more.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s008",
+   "start": 28.711,
+   "end": 31.645,
+   "line": "Your mind never stops thinking.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s009",
+   "start": 31.645,
+   "end": 33.029,
+   "line": "The day is over.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s010",
+   "start": 33.029,
+   "end": 34.544,
+   "line": "The room is quiet.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s011",
+   "start": 34.544,
+   "end": 36.986,
+   "line": "Everyone else has moved on.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s012",
+   "start": 36.986,
+   "end": 43.23,
+   "line": "But your brain is still in that conversation, running it again. Why?",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s013",
+   "start": 43.23,
+   "end": 46.54,
+   "line": "Is your brain trying to protect you?",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s014",
+   "start": 46.54,
+   "end": 50.828,
+   "line": "Or is it creating problems that were never there?",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s015",
+   "start": 50.828,
+   "end": 54.594,
+   "line": "Psychologists call one version of this rumination:",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s016",
+   "start": 54.594,
+   "end": 57.451,
+   "line": "thinking that circles back on itself,",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s017",
+   "start": 57.451,
+   "end": 63.541,
+   "line": "returning to the same painful ground without ever reaching a conclusion.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s018",
+   "start": 63.541,
+   "end": 65.567,
+   "line": "Another version is worry.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s019",
+   "start": 65.567,
+   "end": 70.011,
+   "line": "Thinking pointed forward, at what might happen next.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s020",
+   "start": 70.011,
+   "end": 71.311,
+   "line": "One looks back.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s021",
+   "start": 71.311,
+   "end": 72.815,
+   "line": "One looks forward.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s022",
+   "start": 72.815,
+   "end": 75.051,
+   "line": "Both feel like thinking.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s023",
+   "start": 75.051,
+   "end": 78.436,
+   "line": "And both can keep you awake at night.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s024",
+   "start": 78.436,
+   "end": 80.994,
+   "line": "Here is how a loop starts.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s025",
+   "start": 80.994,
+   "end": 83.069,
+   "line": "A single thought arrives.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s026",
+   "start": 83.069,
+   "end": 85.507,
+   "line": "Did I say something wrong?",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s027",
+   "start": 85.507,
+   "end": 88.06,
+   "line": "That thought asks for an answer.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s028",
+   "start": 88.06,
+   "end": 90.154,
+   "line": "So your mind supplies one.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s029",
+   "start": 90.154,
+   "end": 92.052,
+   "line": "And then judges it.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s030",
+   "start": 92.052,
+   "end": 95.513,
+   "line": "Now there are two thoughts. Then four.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s031",
+   "start": 95.513,
+   "end": 102.208,
+   "line": "Each one generates the next, like a chain of dominoes you cannot stop setting up.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s032",
+   "start": 102.208,
+   "end": 105.217,
+   "line": "Notice what is missing. An exit.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s033",
+   "start": 105.217,
+   "end": 107.16,
+   "line": "A solved problem closes.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s034",
+   "start": 107.16,
+   "end": 110.859,
+   "line": "A thought loop does not close. It repeats.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s035",
+   "start": 110.859,
+   "end": 113.364,
+   "line": "And because it feels unfinished,",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s036",
+   "start": 113.364,
+   "end": 118.006,
+   "line": "your brain keeps returning to it, trying to finish it.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s037",
+   "start": 118.006,
+   "end": 121.767,
+   "line": "To understand why, we need to look inside.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s038",
+   "start": 121.767,
+   "end": 125.021,
+   "line": "In the nineteen nineties and two thousands,",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s039",
+   "start": 125.021,
+   "end": 130.701,
+   "line": "neuroscientists began mapping a set of brain regions that become more active",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s040",
+   "start": 130.701,
+   "end": 134.932,
+   "line": "when you are not focused on the outside world.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s041",
+   "start": 134.932,
+   "end": 138.392,
+   "line": "It is called the default mode network.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s042",
+   "start": 138.392,
+   "end": 141.651,
+   "line": "It is active when you daydream, remember,",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s043",
+   "start": 141.651,
+   "end": 145.464,
+   "line": "imagine the future, or think about yourself.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s044",
+   "start": 145.464,
+   "end": 151.331,
+   "line": "Researchers have linked activity in this network to self-generated thought,",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s045",
+   "start": 151.331,
+   "end": 153.362,
+   "line": "including rumination.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s046",
+   "start": 153.362,
+   "end": 155.756,
+   "line": "But here is the careful part.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s047",
+   "start": 155.756,
+   "end": 158.403,
+   "line": "A correlation is not a cause.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s048",
+   "start": 158.403,
+   "end": 164.346,
+   "line": "The default mode network is not a broken part that makes you overthink.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s049",
+   "start": 164.346,
+   "end": 167.899,
+   "line": "It is a system for imagining and remembering.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s050",
+   "start": 167.899,
+   "end": 173.072,
+   "line": "Overthinking may be that system running without a destination.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s051",
+   "start": 173.072,
+   "end": 176.533,
+   "line": "There is a second player. Uncertainty.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s052",
+   "start": 176.533,
+   "end": 180.281,
+   "line": "Psychologists describe intolerance of uncertainty.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s053",
+   "start": 180.281,
+   "end": 185.409,
+   "line": "The tendency to find I do not know genuinely uncomfortable.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s054",
+   "start": 185.409,
+   "end": 192.18,
+   "line": "For some people, an unanswered question feels like an itch that must be scratched.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s055",
+   "start": 192.18,
+   "end": 194.512,
+   "line": "So the mind asks again.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s056",
+   "start": 194.512,
+   "end": 195.866,
+   "line": "And again.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s057",
+   "start": 195.866,
+   "end": 202.336,
+   "line": "Your brain would rather have an answer, even a bad one, than no answer at all.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s058",
+   "start": 202.336,
+   "end": 204.659,
+   "line": "Then there is metacognition.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s059",
+   "start": 204.659,
+   "end": 207.301,
+   "line": "Thinking about your thinking.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s060",
+   "start": 207.301,
+   "end": 210.061,
+   "line": "In small doses it is a superpower.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s061",
+   "start": 210.061,
+   "end": 213.319,
+   "line": "It lets you check your own reasoning.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s062",
+   "start": 213.319,
+   "end": 216.756,
+   "line": "But it can also become a loop of its own.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s063",
+   "start": 216.756,
+   "end": 218.886,
+   "line": "Worrying about worrying.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s064",
+   "start": 218.886,
+   "end": 221.375,
+   "line": "And stress turns the volume up.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s065",
+   "start": 221.375,
+   "end": 227.161,
+   "line": "Under pressure, attention narrows, and it becomes harder to step back.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s066",
+   "start": 227.161,
+   "end": 230.546,
+   "line": "None of this is a disorder by itself.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s067",
+   "start": 230.546,
+   "end": 234.24,
+   "line": "Rumination is something every human brain does.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s068",
+   "start": 234.24,
+   "end": 236.414,
+   "line": "It is not a diagnosis.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s069",
+   "start": 236.414,
+   "end": 238.369,
+   "line": "But it has a cost.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s070",
+   "start": 238.369,
+   "end": 241.303,
+   "line": "Sleep is often the first thing to go.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s071",
+   "start": 241.303,
+   "end": 246.494,
+   "line": "The bed becomes a meeting room, and the meeting has no agenda.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s072",
+   "start": 246.494,
+   "end": 252.888,
+   "line": "Concentration slips, because part of your attention is always somewhere else.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s073",
+   "start": 252.888,
+   "end": 259.584,
+   "line": "Conversations get harder, because you are partly listening, and partly reviewing.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s074",
+   "start": 259.584,
+   "end": 261.488,
+   "line": "And decisions slow down,",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s075",
+   "start": 261.488,
+   "end": 268.084,
+   "line": "because every option arrives with a rehearsal of everything that could go wrong.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s076",
+   "start": 268.084,
+   "end": 271.545,
+   "line": "The cost is not dramatic. It is quiet.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s077",
+   "start": 271.545,
+   "end": 277.939,
+   "line": "It is a hundred small withdrawals of attention from the life in front of you.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s078",
+   "start": 277.939,
+   "end": 282.979,
+   "line": "And because nothing visibly breaks, it can go on for years.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s079",
+   "start": 282.979,
+   "end": 285.121,
+   "line": "Here is the turning point.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s080",
+   "start": 285.121,
+   "end": 287.418,
+   "line": "And it is a strange one.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s081",
+   "start": 287.418,
+   "end": 294.263,
+   "line": "The moment you realise that thinking about a problem is not the same as solving it.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s082",
+   "start": 294.263,
+   "end": 296.55,
+   "line": "Repetition feels productive.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s083",
+   "start": 296.55,
+   "end": 298.476,
+   "line": "It feels like work.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s084",
+   "start": 298.476,
+   "end": 302.088,
+   "line": "But rumination rarely produces new information.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s085",
+   "start": 302.088,
+   "end": 307.278,
+   "line": "It produces the same information, with more emotion attached.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s086",
+   "start": 307.278,
+   "end": 311.929,
+   "line": "So psychology offers a different move. First, name it.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s087",
+   "start": 311.929,
+   "end": 316.695,
+   "line": "Not I am an anxious person, but I am having a rumination loop.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s088",
+   "start": 316.695,
+   "end": 319.767,
+   "line": "That small distance is called decentering,",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s089",
+   "start": 319.767,
+   "end": 324.73,
+   "line": "and it changes how much the thought can push you around.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s090",
+   "start": 324.73,
+   "end": 327.281,
+   "line": "Second, postpone, do not suppress.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s091",
+   "start": 327.281,
+   "end": 330.086,
+   "line": "Set a time later today for worrying.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s092",
+   "start": 330.086,
+   "end": 335.939,
+   "line": "When the thought arrives before then, write it down, and let it wait.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s093",
+   "start": 335.939,
+   "end": 338.142,
+   "line": "Third, ask a better question.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s094",
+   "start": 338.142,
+   "end": 344.816,
+   "line": "Not what did they think of me, but what would I tell a friend who asked me this?",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s095",
+   "start": 344.816,
+   "end": 349.513,
+   "line": "Fourth, put it in the body. A walk. A shower. Slow breathing.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s096",
+   "start": 349.513,
+   "end": 354.972,
+   "line": "When attention has somewhere real to go, the loop loses its grip.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s097",
+   "start": 354.972,
+   "end": 359.567,
+   "line": "And fifth, accept the uncertainty on purpose. Say it plainly.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s098",
+   "start": 359.567,
+   "end": 363.773,
+   "line": "I do not know, and I can live with not knowing.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s099",
+   "start": 363.773,
+   "end": 367.008,
+   "line": "This is the part worth remembering.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s100",
+   "start": 367.008,
+   "end": 368.855,
+   "line": "Your thoughts are real.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s101",
+   "start": 368.855,
+   "end": 371.296,
+   "line": "They are events in your brain.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s102",
+   "start": 371.296,
+   "end": 373.327,
+   "line": "They are not nothing.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s103",
+   "start": 373.327,
+   "end": 375.659,
+   "line": "But they are not facts.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s104",
+   "start": 375.659,
+   "end": 381.301,
+   "line": "A thought is a guess your brain makes, using old data, in the dark.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s105",
+   "start": 381.301,
+   "end": 383.163,
+   "line": "Sometimes it is right.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s106",
+   "start": 383.163,
+   "end": 385.439,
+   "line": "Sometimes it is a story.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s107",
+   "start": 385.439,
+   "end": 389.023,
+   "line": "The overthinking mind is usually not your enemy.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s108",
+   "start": 389.023,
+   "end": 393.298,
+   "line": "It is an old protective system, trying to keep you safe,",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s109",
+   "start": 393.298,
+   "end": 397.551,
+   "line": "in a world that no longer has the same dangers.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s110",
+   "start": 397.551,
+   "end": 400.409,
+   "line": "You do not have to silence it.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s111",
+   "start": 400.409,
+   "end": 405.75,
+   "line": "You only have to stop treating every thought as an instruction.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s112",
+   "start": 405.75,
+   "end": 410.387,
+   "line": "So tonight, when the conversation starts again in your head,",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s113",
+   "start": 410.387,
+   "end": 413.724,
+   "line": "and it will, try asking one question.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s114",
+   "start": 413.724,
+   "end": 418.539,
+   "line": "Is this a thought I am having, or a fact I have checked?",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s115",
+   "start": 418.539,
+   "end": 423.881,
+   "line": "If you want more of these quiet explanations of how your mind works,",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s116",
+   "start": 423.881,
+   "end": 426.287,
+   "line": "subscribe to Memory Pulse.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s117",
+   "start": 426.287,
+   "end": 428.563,
+   "line": "And tell me in the comments.",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  },
+  {
+   "id": "s118",
+   "start": 428.563,
+   "end": 434.415,
+   "line": "What is the one thought your brain keeps returning to?",
+   "scene": "TODO",
+   "set": null,
+   "bars": null,
+   "in": {
+    "type": "cut"
+   },
+   "sfx": [],
+   "notes": ""
+  }
+ ],
+ "music": [
+  {
+   "start": 0.0,
+   "end": 57.0,
+   "mood": "mystery",
+   "intensity": 0.45
+  },
+  {
+   "start": 57.0,
+   "end": 132.0,
+   "mood": "tension",
+   "intensity": 0.6
+  },
+  {
+   "start": 132.0,
+   "end": 220.0,
+   "mood": "calm",
+   "intensity": 0.5
+  },
+  {
+   "start": 220.0,
+   "end": 280.0,
+   "mood": "dark",
+   "intensity": 0.55
+  },
+  {
+   "start": 280.0,
+   "end": 365.0,
+   "mood": "hopeful",
+   "intensity": 0.65
+  },
+  {
+   "start": 365.0,
+   "end": 434.415,
+   "mood": "wonder",
+   "intensity": 0.7
+  }
+ ]
+}

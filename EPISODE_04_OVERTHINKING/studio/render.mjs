@@ -19,7 +19,7 @@ if (!args.project) { console.error('usage: node render.mjs --project <dir> [opti
 const PROJECT = path.resolve(ROOT, args.project);
 const BUILD = path.join(PROJECT, 'build');
 fs.mkdirSync(BUILD, { recursive: true });
-const FF = path.join(ROOT, 'bin', 'ffmpeg');
+const FF = fs.existsSync(path.join(ROOT, 'bin', 'ffmpeg.exe')) ? path.join(ROOT, 'bin', 'ffmpeg.exe') : (fs.existsSync(path.join(ROOT, 'bin', 'ffmpeg')) ? path.join(ROOT, 'bin', 'ffmpeg') : 'ffmpeg');
 const FONT_DIR = path.join(ROOT, 'assets', 'fonts');
 const fmtT = s => `${Math.floor(s / 60)}m${String(Math.round(s % 60)).padStart(2, '0')}s`;
 const sh = (cmd, a, opts = {}) => spawn(cmd, a, { stdio: 'inherit', ...opts });
@@ -38,7 +38,7 @@ if (args.worker) {
   for (let f = a; f < b; f++) {
     const buf = fmt(f, 95);
     if (!ff.stdin.write(buf)) await new Promise(r => ff.stdin.once('drain', r));
-    if ((f - a) % 60 === 0) process.stderr.write(`\r  worker ${a}-${b}: ${f - a}/${b - a} (${((f - a) / ((Date.now() - t0) / 1000)).toFixed(2)} fps)`);
+    if ((f - a) % 120 === 0) process.stderr.write(`  worker ${a}-${b}: ${f - a}/${b - a} (${((f - a) / Math.max(0.001, (Date.now() - t0) / 1000)).toFixed(1)} fps)\n`);
   }
   ff.stdin.end();
   await new Promise((res, rej) => ff.on('close', c => (c ? rej(new Error('ffmpeg failed')) : res())));
@@ -105,32 +105,32 @@ if (args.stills) {
 // full / partial video render
 const f0 = Math.max(0, Math.round((+args.from || 0) * FPS));
 const f1 = Math.min(total, args.to ? Math.round(+args.to * FPS) : total);
-const W = Math.max(1, Math.min(+(args.workers || Math.max(1, os.cpus().length - 1)), Math.ceil((f1 - f0) / 48)));
+const W = Math.max(1, Math.min(+(args.workers || 4), Math.ceil((f1 - f0) / 48)));
 // scratch dir per output file, so two concurrent renders never wipe each other's parts
 const tag = path.basename(path.resolve(args.out || (args.from || args.to ? 'preview.mp4' : 'video_silent.mp4'))).replace(/\.[^.]+$/, '');
 const parts = path.join(BUILD, `parts-${tag}`);
 fs.rmSync(parts, { recursive: true, force: true }); fs.mkdirSync(parts, { recursive: true });
 const chunk = Math.ceil((f1 - f0) / W);
 const t0 = Date.now();
-console.log(`Rendering frames ${f0}-${f1} (${((f1 - f0) / FPS).toFixed(1)} s) with ${W} worker(s)…`);
+console.log(`Rendering frames ${f0}-${f1} (${((f1 - f0) / FPS).toFixed(1)} s) with ${W} parallel worker(s)…`);
 const outs = [];
+const tasks = [];
 for (let k = 0; k < W; k++) {
   const a = f0 + k * chunk, b = Math.min(f1, a + chunk);
   if (a >= b) continue;
   const out = path.join(parts, `part_${String(k).padStart(3, '0')}.mp4`);
-  await new Promise((res, rej) => {
+  outs.push(out);
+  tasks.push(new Promise((res, rej) => {
     const p = spawn(process.execPath, [fileURLToPath(import.meta.url), '--project', PROJECT, '--worker',
       '--range', `${a},${b}`, '--out', out,
       ...(args.scale ? ['--scale', args.scale] : []), ...(args.style ? ['--style', args.style] : []),
       ...(args.format ? ['--format', args.format] : []), ...(args.crf ? ['--crf', args.crf] : []),
       ...(args.preset ? ['--preset', args.preset] : [])],
       { stdio: 'inherit', env: { ...process.env, MP_STUDIO: ROOT, MP_PROJECT: PROJECT } });
-    p.on('close', c => (c === 0 ? res() : rej(new Error('worker failed'))));
-  });
-  outs.push(out);
-  const el = (Date.now() - t0) / 1000, done = Math.min(f1 - f0, (k + 1) * chunk);
-  console.log(`  ${done}/${f1 - f0} frames  ${(done / el).toFixed(2)} fps  elapsed ${fmtT(el)}  eta ${fmtT(el / done * (f1 - f0 - done))}`);
+    p.on('close', c => (c === 0 ? res() : rej(new Error(`worker ${k} failed with exit code ${c}`))));
+  }));
 }
+await Promise.all(tasks);
 const list = path.join(parts, 'list.txt');
 fs.writeFileSync(list, outs.map(p => `file '${p.replace(/'/g, "'\\''")}'`).join('\n'));
 const outFile = path.resolve(args.out || path.join(BUILD, args.from || args.to ? 'preview.mp4' : 'video_silent.mp4'));

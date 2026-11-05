@@ -54,9 +54,14 @@ def main():
             k = secs(3); mus[-k:] *= np.linspace(1, 0, k)[:, None]
         else:
             path = os.path.join(P, "build", "music.wav")
-            plan = story.get("music") or MUSIC.default_plan(total)
-            print(f"generating music: {len(plan)} section(s) — " + ", ".join(f"{s['mood']}@{s.get('intensity', .5)}" for s in plan))
-            mus = MUSIC.render_score(plan, total, mcfg.get("seed", 1), mcfg.get("key")); write_wav(path, mus)
+            if os.path.exists(path):
+                print(f"reusing existing score: {path}")
+                mus = load_any(path)
+            else:
+                plan = story.get("music") or MUSIC.default_plan(total)
+                print(f"generating music: {len(plan)} section(s) — " + ", ".join(f"{s['mood']}@{s.get('intensity', .5)}" for s in plan))
+                mus = MUSIC.render_score(plan, total, mcfg.get("seed", 1), mcfg.get("key"))
+                write_wav(path, mus)
         mus = as_stereo(mus)[:n]; mus = np.concatenate([mus, np.zeros((n - len(mus), 2), np.float32)])
         mus *= db(v_rms + mcfg.get("gainDb", -17) - rms_db(mus))
         mus *= db(-9 * env)[:, None]
