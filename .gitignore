@@ -1,0 +1,12 @@
+# dependencies & toolchain
+node_modules/
+__pycache__/
+*.pyc
+
+# the static ffmpeg binary is fetched on demand, never committed
+EPISODE_04_OVERTHINKING/studio/bin/
+
+# render intermediates and outputs
+build/
+out/
+timeline/
