@@ -14,39 +14,40 @@ import { ALEX, SAM, DR_ELLIS, CAST } from '../cast.js';
 registerShot('s099', {
   bars: 'scope',
   draw(g, t, info) {
-    thoughtSpace(g, t, { z: 1.1, x: 0 });
-    glow(g, E.W * 0.5, E.H * 0.45, 260, '#fbbf24', 0.45);
-    UI.bigLine(g, t, { line: 'WORTH REMEMBERING', y: E.H * 0.45, dur: info.dur });
+    thoughtSpace(g, t, { z: 1.1 + 0.04 * (t / info.dur), x: 0 });
+    glow(g, E.W * 0.5, E.H * 0.45, 280, '#fbbf24', 0.45);
+    UI.bigLine(g, t, { line: 'WORTH REMEMBERING', sub: 'THE CORE COGNITIVE INSIGHT', y: E.H * 0.45, dur: info.dur });
   }
 });
 
 // s100 — "Your thoughts are real."
 registerShot('s100', {
   draw(g, t, info) {
-    thoughtSpace(g, t, { z: 1.05, x: 0 });
-    circle(g, E.W * 0.5, E.H * 0.45, 28, '#38bdf8');
-    glow(g, E.W * 0.5, E.H * 0.45, 80, '#38bdf8', 0.5);
-    UI.callout(g, { text: 'NEURAL PHENOMENA', x: E.W * 0.5 + 40, y: E.H * 0.45 });
+    thoughtSpace(g, t, { z: 1.08, x: 0 });
+    circle(g, E.W * 0.5, E.H * 0.45, 34, '#38bdf8');
+    glow(g, E.W * 0.5, E.H * 0.45, 90, '#38bdf8', 0.55);
+    UI.callout(g, t, { text: 'NEURAL ELECTROCHEMICAL EVENTS', at: [E.W * 0.5, E.H * 0.45], to: [E.W * 0.5 + 160, E.H * 0.35], color: '#38bdf8' });
   }
 });
 
 // s101 — "They are events in your brain."
 registerShot('s101', {
   draw(g, t, info) {
-    thoughtSpace(g, t, { z: 1, x: 0 });
-    UI.badge(g, { text: 'ELECTROCHEMICAL EVENTS', x: E.W * 0.5 - 90, y: E.H * 0.35, color: '#38bdf8' });
-    circle(g, E.W * 0.5, E.H * 0.48, 36, '#38bdf8');
+    thoughtSpace(g, t, { z: 1.05, x: 0 });
+    UI.badge(g, { text: 'TANGIBLE BIOLOGICAL PHENOMENA', x: E.W * 0.5, y: E.H * 0.32, color: '#38bdf8' });
+    circle(g, E.W * 0.5, E.H * 0.48, 42, '#38bdf8');
+    glow(g, E.W * 0.5, E.H * 0.48, 100, '#38bdf8', 0.5);
   }
 });
 
 // s102 — "They are not nothing."
 registerShot('s102', {
   draw(g, t, info) {
-    thoughtSpace(g, t, { z: 1.05, x: 0 });
+    thoughtSpace(g, t, { z: 1.08, x: 0 });
     drawFigure(g, {
-      x: E.W * 0.5, y: E.H * 0.72, s: 1.4, facing: 1, outfit: ALEX,
-      pose: POSES.stand, expr: 'neutral',
-      rim: { color: '#38bdf8', dir: [0, -1], w: 4 }
+      x: E.W * 0.5, y: E.H * 0.72, s: 1.65, facing: 1, outfit: ALEX,
+      pose: breathe(POSES.stand, t), expr: 'neutral',
+      rim: { color: '#38bdf8', dir: [0, -1], w: 4.5 }
     });
   }
 });
@@ -57,12 +58,19 @@ registerShot('s103', {
   draw(g, t, info) {
     thoughtSpace(g, t, { z: 1.15, x: 0 });
     g.save();
+    rr(g, E.W * 0.5 - 340, E.H * 0.34, 680, 160, 20);
+    g.fillStyle = 'rgba(11, 19, 43, 0.92)';
+    g.fill();
     g.strokeStyle = '#ef4444';
-    g.lineWidth = 5;
-    rr(g, E.W * 0.5 - 280, E.H * 0.4, 560, 100, 16);
+    g.lineWidth = 4;
     g.stroke();
-    text(g, 'THOUGHTS ≠ FACTS', E.W * 0.5, E.H * 0.46, {
-      size: 40, color: '#f8fafc', font: FONTS.ui, weight: 900
+
+    UI.badge(g, { text: 'FUNDAMENTAL AXIOM', x: E.W * 0.5, y: E.H * 0.39, color: '#f59e0b', bg: false });
+    text(g, 'THOUGHTS ≠ FACTS', E.W * 0.5, E.H * 0.47, {
+      size: 46, color: '#f8fafc', font: FONTS.ui, weight: 900
+    });
+    text(g, 'A thought is a predictive hypothesis, not an objective truth.', E.W * 0.5, E.H * 0.54, {
+      size: 20, color: '#94a3b8', font: FONTS.ui, weight: 900
     });
     g.restore();
   }
@@ -71,43 +79,46 @@ registerShot('s103', {
 // s104 — "A thought is a guess your brain makes, using old data, in the dark."
 registerShot('s104', {
   draw(g, t, info) {
-    thoughtSpace(g, t, { z: 1, x: 0 });
-    UI.readout(g, { label: 'COGNITIVE ARCHITECTURE:', value: 'PREDICTIVE GUESS (OLD DATA)', x: E.W * 0.5 - 130, y: E.H * 0.45 });
+    thoughtSpace(g, t, { z: 1.05, x: 0 });
+    UI.readout(g, { label: 'PREDICTIVE COGNITION:', value: 'HEURISTIC GUESS (OLD PAST DATA)', x: E.W * 0.5 - 180, y: E.H * 0.46 });
   }
 });
 
 // s105 — "Sometimes it is right."
 registerShot('s105', {
   draw(g, t, info) {
-    thoughtSpace(g, t, { z: 1.05, x: 0 });
-    circle(g, E.W * 0.5, E.H * 0.45, 40, '#10b981');
-    text(g, '✓', E.W * 0.5, E.H * 0.48, { size: 40, color: '#ffffff', font: FONTS.ui, weight: 900 });
+    thoughtSpace(g, t, { z: 1.08, x: 0 });
+    circle(g, E.W * 0.5, E.H * 0.44, 48, '#10b981');
+    glow(g, E.W * 0.5, E.H * 0.44, 100, '#10b981', 0.5);
+    text(g, '✓', E.W * 0.5, E.H * 0.48, { size: 48, color: '#ffffff', font: FONTS.ui, weight: 900 });
+    UI.badge(g, { text: 'ACCURATE RISK ASSESSMENT', x: E.W * 0.5, y: E.H * 0.62, color: '#10b981' });
   }
 });
 
 // s106 — "Sometimes it is a story."
 registerShot('s106', {
   draw(g, t, info) {
-    thoughtSpace(g, t, { z: 1.05, x: 0 });
-    circle(g, E.W * 0.5, E.H * 0.45, 40, '#f59e0b');
-    text(g, '...', E.W * 0.5, E.H * 0.46, { size: 40, color: '#ffffff', font: FONTS.ui, weight: 900 });
+    thoughtSpace(g, t, { z: 1.08, x: 0 });
+    circle(g, E.W * 0.5, E.H * 0.44, 48, '#f59e0b');
+    glow(g, E.W * 0.5, E.H * 0.44, 100, '#f59e0b', 0.5);
+    text(g, '...', E.W * 0.5, E.H * 0.46, { size: 48, color: '#ffffff', font: FONTS.ui, weight: 900 });
+    UI.badge(g, { text: 'CATASTROPHIC NARRATIVE', x: E.W * 0.5, y: E.H * 0.62, color: '#f59e0b' });
   }
 });
 
 // s107 — "The overthinking mind is usually not your enemy."
 registerShot('s107', {
   draw(g, t, info) {
-    thoughtSpace(g, t, { z: 1.1, x: 0 });
-    // Alex and friendly reflection
+    thoughtSpace(g, t, { z: 1.12, x: 0 });
     drawFigure(g, {
-      x: E.W * 0.42, y: E.H * 0.72, s: 1.4, facing: 1, outfit: ALEX,
-      pose: POSES.explain, expr: 'smile',
-      rim: { color: '#38bdf8', dir: [1, 0], w: 4 }
+      x: E.W * 0.40, y: E.H * 0.72, s: 1.65, facing: 1, outfit: ALEX,
+      pose: breathe(POSES.explain, t), expr: 'smile',
+      rim: { color: '#38bdf8', dir: [1, 0], w: 4.5 }
     });
     drawFigure(g, {
-      x: E.W * 0.58, y: E.H * 0.72, s: 1.4, facing: -1, outfit: ALEX,
-      pose: POSES.stand, expr: 'smile',
-      rim: { color: '#fbbf24', dir: [-1, 0], w: 4 }
+      x: E.W * 0.60, y: E.H * 0.72, s: 1.65, facing: -1, outfit: ALEX,
+      pose: breathe(POSES.stand, t, 0.8), expr: 'smile',
+      rim: { color: '#fbbf24', dir: [-1, 0], w: 4.5 }
     });
   }
 });
@@ -115,13 +126,14 @@ registerShot('s107', {
 // s108 — "It is an old protective system, trying to keep you safe,"
 registerShot('s108', {
   draw(g, t, info) {
-    thoughtSpace(g, t, { z: 1.1, x: 0 });
-    glow(g, E.W * 0.5, E.H * 0.55, 180, '#fbbf24', 0.4);
+    thoughtSpace(g, t, { z: 1.12, x: 0 });
+    glow(g, E.W * 0.5, E.H * 0.55, 220, '#fbbf24', 0.45);
     drawFigure(g, {
-      x: E.W * 0.5, y: E.H * 0.72, s: 1.45, facing: 1, outfit: ALEX,
-      pose: POSES.ready, expr: 'smile',
+      x: E.W * 0.5, y: E.H * 0.72, s: 1.7, facing: 1, outfit: ALEX,
+      pose: breathe(POSES.ready, t), expr: 'smile',
       rim: { color: '#fbbf24', dir: [0, -1], w: 5 }
     });
+    UI.badge(g, { text: 'ANCIENT THREAT-DETECTION SYSTEM', x: E.W * 0.5, y: E.H * 0.26, color: '#fbbf24' });
   }
 });
 
@@ -129,18 +141,18 @@ registerShot('s108', {
 registerShot('s109', {
   draw(g, t, info) {
     thoughtSpace(g, t, { z: 1.05, x: 0 });
-    UI.bigLine(g, t, { line: 'MODERN LIFE · ANCIENT HARDWARE', y: E.H * 0.45, dur: info.dur });
+    UI.bigLine(g, t, { line: 'MODERN LIFE · ANCIENT HARDWARE', sub: 'PHYSICAL SURVIVAL CIRCS APPLIED TO SOCIAL SIGNALS', y: E.H * 0.45, dur: info.dur });
   }
 });
 
 // s110 — "You do not have to silence it."
 registerShot('s110', {
   draw(g, t, info) {
-    thoughtSpace(g, t, { z: 1.1, x: 0 });
+    thoughtSpace(g, t, { z: 1.12, x: 0 });
     drawFigure(g, {
-      x: E.W * 0.5, y: E.H * 0.72, s: 1.4, facing: 1, outfit: ALEX,
-      pose: POSES.relaxed, expr: 'smile',
-      rim: { color: '#38bdf8', dir: [0, -1], w: 4 }
+      x: E.W * 0.5, y: E.H * 0.72, s: 1.7, facing: 1, outfit: ALEX,
+      pose: breathe(POSES.relaxed, t), expr: 'smile',
+      rim: { color: '#38bdf8', dir: [0, -1], w: 4.5 }
     });
   }
 });
@@ -149,25 +161,27 @@ registerShot('s110', {
 registerShot('s111', {
   bars: 'scope',
   draw(g, t, info) {
-    thoughtSpace(g, t, { z: 1.1, x: 0 });
-    // Thought floating up into the sky unattached
-    const bubbleY = E.H * 0.65 - (t * 40) % 240;
-    circle(g, E.W * 0.5, bubbleY, 32, '#64748b');
+    thoughtSpace(g, t, { z: 1.12, x: 0 });
+    const bubbleY = E.H * 0.65 - (t * 45) % 260;
+    circle(g, E.W * 0.5, bubbleY, 36, '#64748b');
+    glow(g, E.W * 0.5, bubbleY, 60, '#64748b', 0.35);
+
     drawFigure(g, {
-      x: E.W * 0.5, y: E.H * 0.78, s: 1.35, facing: 1, outfit: ALEX,
-      pose: POSES.stand, expr: 'smile',
-      rim: { color: '#10b981', dir: [0, -1], w: 4 }
+      x: E.W * 0.5, y: E.H * 0.78, s: 1.65, facing: 1, outfit: ALEX,
+      pose: breathe(POSES.stand, t), expr: 'smile',
+      rim: { color: '#10b981', dir: [0, -1], w: 4.5 }
     });
-    UI.callout(g, { text: 'NOT AN INSTRUCTION', x: E.W * 0.5 + 50, y: bubbleY });
+
+    UI.callout(g, t, { text: 'THOUGHT ≠ MANDATORY ACTION', at: [E.W * 0.5, bubbleY], to: [E.W * 0.5 + 140, bubbleY], color: '#10b981' });
   }
 });
 
 // s112 — "So tonight, when the conversation starts again in your head,"
 registerShot('s112', {
   draw(g, t, info) {
-    const { GY } = bedroom(g, t, { z: 1.1, x: 0 });
-    bed(g, E.W * 0.55, GY, 1.4);
-    nightstand(g, E.W * 0.55 - 260, GY, '11:45');
+    const { GY } = bedroom(g, t, { z: 1.12, x: 0 });
+    bed(g, E.W * 0.55, GY, 1.5);
+    nightstand(g, E.W * 0.55 - 290, GY, '11:45');
     veil(g, '#090d14', 0.25);
   }
 });
@@ -175,8 +189,8 @@ registerShot('s112', {
 // s113 — "and it will, try asking one question."
 registerShot('s113', {
   draw(g, t, info) {
-    thoughtSpace(g, t, { z: 1.05, x: 0 });
-    UI.bigLine(g, t, { line: 'ASK ONE QUESTION', y: E.H * 0.45, dur: info.dur });
+    thoughtSpace(g, t, { z: 1.08, x: 0 });
+    UI.bigLine(g, t, { line: 'ASK ONE QUESTION', sub: 'THE GOLDEN REFLECTIVE CHECK', y: E.H * 0.45, dur: info.dur });
   }
 });
 
@@ -185,9 +199,9 @@ registerShot('s114', {
   bars: 'scope',
   draw(g, t, info) {
     thoughtSpace(g, t, { z: 1.15, x: 0 });
-    glow(g, E.W * 0.5, E.H * 0.46, 260, '#38bdf8', 0.35);
+    glow(g, E.W * 0.5, E.H * 0.46, 300, '#38bdf8', 0.4);
     UI.bubble(g, E.W * 0.5, E.H * 0.46, {
-      w: 620, h: 80, str: '"Is this a thought I am having, or a fact I have checked?"'
+      w: 680, h: 86, str: '"Is this a thought I am having, or a fact I have checked?"'
     });
   }
 });
@@ -195,20 +209,20 @@ registerShot('s114', {
 // s115 — "If you want more of these quiet explanations of how your mind works,"
 registerShot('s115', {
   draw(g, t, info) {
-    thoughtSpace(g, t, { z: 1, x: 0 });
-    UI.bigLine(g, t, { line: 'MEMORY PULSE', y: E.H * 0.45, dur: info.dur });
+    thoughtSpace(g, t, { z: 1.05, x: 0 });
+    UI.bigLine(g, t, { line: 'MEMORY PULSE', sub: 'QUIET SCIENCE FOR BUSY MINDS', y: E.H * 0.45, dur: info.dur });
   }
 });
 
 // s116 — "subscribe to Memory Pulse."
 registerShot('s116', {
   draw(g, t, info) {
-    thoughtSpace(g, t, { z: 1.05, x: 0 });
-    // Subscribe pill button
+    thoughtSpace(g, t, { z: 1.08, x: 0 });
     g.save();
     g.fillStyle = '#ef4444';
-    rr(g, E.W * 0.5 - 140, E.H * 0.42, 280, 60, 30, true);
-    text(g, 'SUBSCRIBE', E.W * 0.5, E.H * 0.47, { size: 22, color: '#ffffff', font: FONTS.ui, weight: 900 });
+    rr(g, E.W * 0.5 - 160, E.H * 0.42, 320, 68, 34, true);
+    glow(g, E.W * 0.5, E.H * 0.45, 120, '#ef4444', 0.5);
+    text(g, 'SUBSCRIBE', E.W * 0.5, E.H * 0.47, { size: 26, color: '#ffffff', font: FONTS.ui, weight: 900 });
     g.restore();
   }
 });
@@ -216,8 +230,8 @@ registerShot('s116', {
 // s117 — "And tell me in the comments."
 registerShot('s117', {
   draw(g, t, info) {
-    thoughtSpace(g, t, { z: 1.1, x: 0 });
-    UI.bubble(g, E.W * 0.5, E.H * 0.45, { w: 320, h: 64, str: 'Leave a comment...' });
+    thoughtSpace(g, t, { z: 1.12, x: 0 });
+    UI.bubble(g, E.W * 0.5, E.H * 0.45, { w: 380, h: 70, str: 'Leave your answer in the comments...' });
   }
 });
 
@@ -232,4 +246,3 @@ registerShot('s118', {
     });
   }
 });
-

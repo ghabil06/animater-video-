@@ -1,4 +1,4 @@
-// scenes/shots/01_act1.js — ACT 1: "The Never-Ending Mind" (Shots s001 - s012)
+// scenes/shots/01_act1.js — ACT 1: "The Never-Ending Mind" (Shots s001 - s014)
 import {
   E, V, registerShot, mood, layer, blurLayer, veil, ease, prog, key, clamp, lerp, shake,
   seg, circle, ring, rr, glow, alpha, shade, linGrad
@@ -23,20 +23,18 @@ function chair(g, x, GY, s, facing) {
 // s001 — Café wide: Alex and Sam chatting at sunset
 registerShot('s001', {
   draw(g, t, info) {
-    const cam = { z: 1 + 0.05 * ease.inOut(t / info.dur), x: -20 * ease.inOut(t / info.dur) };
+    const cam = { z: 1.02 + 0.06 * ease.inOut(t / info.dur), x: -25 * ease.inOut(t / info.dur) };
     const { GY, M } = cafe(g, t, cam);
-    const s = V(1.5, 1.6);
-    const alexX = E.W * 0.42, samX = E.W * 0.62;
+    const s = 1.65;
+    const alexX = E.W * 0.40, samX = E.W * 0.64;
 
     layer(g, cam, 1, (g) => {
-      // Chairs and table
       chair(g, alexX, GY, s, 1);
       chair(g, samX, GY, s, -1);
       const tb = cafeTable(g, (alexX + samX) * 0.5, GY);
-      coffeeCup(g, (alexX + samX) * 0.5 - 18, tb.top, 1.1);
-      coffeeCup(g, (alexX + samX) * 0.5 + 24, tb.top, 1.1);
+      coffeeCup(g, (alexX + samX) * 0.5 - 22, tb.top, 1.15);
+      coffeeCup(g, (alexX + samX) * 0.5 + 26, tb.top, 1.15);
 
-      // Alex sitting, talking/gesturing with arm
       const alexPose = breathe(posesAt(t, [
         [0, POSES.sit],
         [2.2, { ...POSES.sit, eF: [22, -130], hF: [35, -165] }],
@@ -46,35 +44,34 @@ registerShot('s001', {
       drawFigure(g, {
         x: alexX, y: GY, s, facing: 1, outfit: ALEX,
         pose: alexPose, expr: t > 4.8 ? 'neutral' : 'smile',
-        rim: { color: M.rim, dir: [-1, -0.2], w: 4 }
+        rim: { color: M.rim, dir: [-1, -0.2], w: 4.5 }
       });
 
-      // Sam sitting opposite, listening and smiling
       const samPose = breathe(POSES.sit, t, 1, 2);
       drawFigure(g, {
         x: samX, y: GY, s, facing: -1, outfit: SAM,
         pose: samPose, expr: 'smile',
-        rim: { color: M.rim, dir: [-1, -0.2], w: 4 }
+        rim: { color: M.rim, dir: [-1, -0.2], w: 4.5 }
       });
     });
 
-    FX.dust(g, t, { count: 30, color: '#ffd6a5', a: 0.3 });
+    FX.dust(g, t, { count: 28, color: '#ffd6a5', a: 0.35 });
   }
 });
 
 // s002 — Medium close: The awkward sentence
 registerShot('s002', {
   draw(g, t, info) {
-    const cam = { z: 1.8 + 0.1 * (t / info.dur), x: 40 };
+    const cam = { z: 1.85 + 0.12 * (t / info.dur), x: 35 };
     const { GY, M } = cafe(g, t, cam);
-    const s = V(2.0, 2.2);
+    const s = 2.25;
     const alexX = E.W * 0.48;
 
     layer(g, cam, 1, (g) => {
-      const alexPose = posesAt(t, [
+      const alexPose = breathe(posesAt(t, [
         [0, POSES.sit],
         [0.8, { ...POSES.sit, eF: [18, -120], hF: [28, -150] }]
-      ]);
+      ]), t, 0.8, 1);
       drawFigure(g, {
         x: alexX, y: GY, s, facing: 1, outfit: ALEX,
         pose: alexPose, expr: t > 1.2 ? 'worried' : 'neutral',
@@ -82,7 +79,6 @@ registerShot('s002', {
       });
     });
 
-    // Subtle freeze / time-warp vignette in the background
     veil(g, '#181224', ease.inOut(prog(t, 1.2, 2.5)) * 0.35);
   }
 });
@@ -91,24 +87,23 @@ registerShot('s002', {
 registerShot('s003', {
   bars: 'scope',
   draw(g, t, info) {
-    const cam = { z: 1 + 0.04 * (t / info.dur), x: 0 };
+    const cam = { z: 1.05 + 0.05 * (t / info.dur), x: 0 };
     const { GY, M } = bedroom(g, t, cam);
     const bedX = E.W * 0.58;
 
     layer(g, cam, 1, (g) => {
-      bed(g, bedX, GY, 1.4);
-      nightstand(g, bedX - 260, GY, '02:14');
+      bed(g, bedX, GY, 1.5);
+      nightstand(g, bedX - 290, GY, '02:14');
 
-      // Alex lying on bed staring up at ceiling
-      const liePose = { ...POSES.lie, rot: 0 };
+      const liePose = breathe({ ...POSES.lie, rot: 0 }, t, 0.8, 3);
       drawFigure(g, {
-        x: bedX - 90, y: GY - 28, s: 1.3, facing: 1, rot: 0, outfit: ALEX,
+        x: bedX - 100, y: GY - 30, s: 1.6, facing: 1, rot: 0, outfit: ALEX,
         pose: liePose, expr: 'thinking',
-        rim: { color: '#7dd3fc', dir: [-0.6, -1], w: 3 }
+        rim: { color: '#7dd3fc', dir: [-0.6, -1], w: 3.5 }
       });
     });
 
-    FX.dust(g, t, { count: 20, color: '#93c5fd', a: 0.2 });
+    FX.dust(g, t, { count: 24, color: '#93c5fd', a: 0.25 });
   }
 });
 
@@ -116,22 +111,21 @@ registerShot('s003', {
 registerShot('s004', {
   bars: 'scope',
   draw(g, t, info) {
-    blurLayer(g, 16, (g) => bedroom(g, t, { z: 1.6, x: -80 }));
-    veil(g, '#090d14', 0.5);
+    blurLayer(g, 16, (g) => bedroom(g, t, { z: 1.65, x: -80 }));
+    veil(g, '#090d14', 0.52);
 
-    const r = V(300, 320) * (1 + 0.03 * (t / info.dur));
+    const r = V(320, 340) * (1 + 0.03 * (t / info.dur));
     bigFace(g, E.W * 0.5, E.H * V(0.58, 0.52), r, {
       outfit: ALEX,
       expr: 'worried',
-      look: [0, -0.4], // looking up into the dark
+      look: [0, -0.4],
       rimColor: '#7dd3fc',
       rimSide: -1,
       blink: false
     });
 
-    // Faint ripples in the air above head
     FX.rings(g, E.W * 0.5, E.H * 0.32, t, {
-      count: 3, r0: 40, r1: 220, speed: 0.8, color: '#38bdf8', a: 0.22
+      count: 3, r0: 40, r1: 240, speed: 0.8, color: '#38bdf8', a: 0.25
     });
   }
 });
@@ -139,23 +133,21 @@ registerShot('s004', {
 // s005 — Echoes of conversation: Ghost memory of Sam
 registerShot('s005', {
   draw(g, t, info) {
-    const { GY } = bedroom(g, t, { z: 1.1, x: 0 });
-    veil(g, '#080c14', 0.6);
+    const { GY } = bedroom(g, t, { z: 1.15, x: 0 });
+    veil(g, '#080c14', 0.58);
 
-    // Floating translucent memory of Sam at the café
-    const alphaFade = 0.45 + Math.sin(t * 3) * 0.15;
+    const alphaFade = 0.50 + Math.sin(t * 3) * 0.15;
     g.save();
     g.globalAlpha = alphaFade;
     drawFigure(g, {
-      x: E.W * 0.5, y: GY - 60, s: 1.4, facing: -1, outfit: SAM,
-      pose: POSES.talk, expr: 'smile',
+      x: E.W * 0.5, y: GY - 60, s: 1.65, facing: -1, outfit: SAM,
+      pose: breathe(POSES.talk, t), expr: 'smile',
       rim: { color: '#f59e0b', dir: [0, -1], w: 4 }
     });
     g.restore();
 
-    // Floating question thought bubble
-    UI.bubble(g, E.W * 0.5, E.H * 0.32, {
-      w: 380, h: 64, str: 'Did I say something wrong?'
+    UI.bubble(g, E.W * 0.5, E.H * 0.30, {
+      w: 420, h: 68, str: 'Did I say something wrong?'
     });
   }
 });
@@ -163,18 +155,18 @@ registerShot('s005', {
 // s006 — "You wonder if they noticed."
 registerShot('s006', {
   draw(g, t, info) {
-    const { GY } = bedroom(g, t, { z: 1.2, x: 0 });
-    veil(g, '#080c14', 0.55);
+    const { GY } = bedroom(g, t, { z: 1.25, x: 0 });
+    veil(g, '#080c14', 0.52);
 
-    const r = V(260, 280);
-    bigFace(g, E.W * 0.45, E.H * 0.55, r, {
+    const r = V(280, 300);
+    bigFace(g, E.W * 0.44, E.H * 0.55, r, {
       outfit: ALEX, expr: 'nervous', look: [0.3, -0.2],
       rimColor: '#38bdf8', rimSide: -1
     });
 
     UI.readout(g, {
-      label: 'STATUS:', value: 'ANALYZING TONE...',
-      x: E.W * 0.62, y: E.H * 0.45, a: ease.out(prog(t, 0.3, 0.9))
+      label: 'INTERNAL STATUS:', value: 'ANALYZING SOCIAL CUES...',
+      x: E.W * 0.60, y: E.H * 0.45, a: ease.out(prog(t, 0.3, 0.9))
     });
   }
 });
@@ -182,43 +174,44 @@ registerShot('s006', {
 // s007 — 10 different ways it could have gone (Branching tree)
 registerShot('s007', {
   draw(g, t, info) {
-    thoughtSpace(g, t, { z: 1, x: 0 });
+    thoughtSpace(g, t, { z: 1.05, x: 0 });
     const p = ease.out(prog(t, 0, info.dur));
 
-    // Branching glowing lines
-    const startX = E.W * 0.2, startY = E.H * 0.5;
+    const startX = E.W * 0.22, startY = E.H * 0.5;
     g.strokeStyle = '#38bdf8';
-    g.lineWidth = 3;
+    g.lineWidth = 3.5;
 
     for (let i = 0; i < 10; i++) {
-      const targetY = E.H * 0.15 + (i / 9) * E.H * 0.7;
-      const targetX = E.W * 0.75;
+      const targetY = E.H * 0.16 + (i / 9) * E.H * 0.68;
+      const targetX = E.W * 0.78;
       const curX = lerp(startX, targetX, p);
       const curY = lerp(startY, targetY, p);
 
       g.beginPath();
       g.moveTo(startX, startY);
-      g.bezierCurveTo(startX + 180, startY, curX - 120, curY, curX, curY);
+      g.bezierCurveTo(startX + 190, startY, curX - 130, curY, curX, curY);
       g.stroke();
 
       if (p > 0.8) {
-        circle(g, targetX, targetY, 6, '#fbbf24');
+        circle(g, targetX, targetY, 7, '#fbbf24');
+        glow(g, targetX, targetY, 18, '#fbbf24', 0.5);
       }
     }
 
-    circle(g, startX, startY, 14, '#38bdf8');
-    UI.badge(g, { text: '10 SCENARIOS', x: V(120, 80), y: V(120, 100), color: '#38bdf8' });
+    circle(g, startX, startY, 16, '#38bdf8');
+    glow(g, startX, startY, 32, '#38bdf8', 0.6);
+    UI.badge(g, { text: '10 BRANCHING SCENARIOS', x: V(140, 90), y: V(130, 110), color: '#38bdf8' });
   }
 });
 
 // s008 — And then you imagine ten more (Multiplier)
 registerShot('s008', {
   draw(g, t, info) {
-    thoughtSpace(g, t, { z: 1.1, x: 0 });
+    thoughtSpace(g, t, { z: 1.12, x: 0 });
 
     UI.dataCard(g, t, {
       title: 'SCENARIO GENERATOR',
-      subtitle: 'REHEARSED ALTERNATIVE FUTURES',
+      subtitle: 'REHEARSED HYPOTHETICAL OUTCOMES',
       from: 10,
       to: 20,
       decimals: 0,
@@ -232,14 +225,13 @@ registerShot('s008', {
 // s009 — Mind never stops thinking (The circular thought loop)
 registerShot('s009', {
   draw(g, t, info) {
-    const { GY } = thoughtSpace(g, t, { z: 1, x: 0 });
-    drawLoopCircle(g, E.W * 0.5, E.H * 0.5, V(240, 260), t);
+    const { GY } = thoughtSpace(g, t, { z: 1.08, x: 0 });
+    drawLoopCircle(g, E.W * 0.5, E.H * 0.5, V(250, 270), t);
 
-    // Silhouette of Alex standing at center of loop
     drawFigure(g, {
-      x: E.W * 0.5, y: E.H * 0.62, s: 1.3, facing: 1, outfit: ALEX,
-      pose: POSES.think, expr: 'thinking',
-      rim: { color: '#38bdf8', dir: [0, -1], w: 3 }
+      x: E.W * 0.5, y: E.H * 0.64, s: 1.65, facing: 1, outfit: ALEX,
+      pose: breathe(POSES.think, t), expr: 'thinking',
+      rim: { color: '#38bdf8', dir: [0, -1], w: 3.5 }
     });
   }
 });
@@ -248,10 +240,9 @@ registerShot('s009', {
 registerShot('s010', {
   bars: 'scope',
   draw(g, t, info) {
-    const { GY } = bedroom(g, t, { z: 0.95 + 0.03 * (t / info.dur), x: 0 });
-    // Still quiet night
-    nightstand(g, E.W * 0.35, GY, '02:15');
-    bed(g, E.W * 0.62, GY, 1.4);
+    const { GY } = bedroom(g, t, { z: 0.98 + 0.04 * (t / info.dur), x: 0 });
+    nightstand(g, E.W * 0.32, GY, '02:15');
+    bed(g, E.W * 0.62, GY, 1.5);
     veil(g, '#080c14', 0.25);
   }
 });
@@ -259,12 +250,17 @@ registerShot('s010', {
 // s011 — Everyone else has moved on.
 registerShot('s011', {
   draw(g, t, info) {
-    const GY = E.H * 0.8;
-    // Distant sleeping city skyline
-    g.fillStyle = '#060810';
+    const GY = E.H * 0.82;
+    const bg = linGrad(g, 0, 0, 0, E.H, [
+      [0, '#040710'],
+      [0.6, '#0b1329'],
+      [1, '#152445']
+    ]);
+    g.fillStyle = bg;
     g.fillRect(0, 0, E.W, E.H);
-    FX.skyline(g, GY, { color: '#0f172a', density: 1.5, hMax: 240, winAlpha: 0.1 });
-    FX.stars(g, t, { count: 60, a: 0.5 });
+    FX.skyline(g, GY, { color: '#0c1527', density: 1.5, hMax: 260, winAlpha: 0.15 });
+    FX.stars(g, t, { count: 70, a: 0.6 });
+    glow(g, E.W * 0.5, GY, E.W * 0.6, '#1e3a5f', 0.35);
   }
 });
 
@@ -273,9 +269,8 @@ registerShot('s012', {
   bars: 'scope',
   draw(g, t, info) {
     thoughtSpace(g, t, { z: 1 + 0.05 * (t / info.dur) });
-    drawLoopCircle(g, E.W * 0.5, E.H * 0.48, V(280, 300), t);
+    drawLoopCircle(g, E.W * 0.5, E.H * 0.48, V(290, 310), t);
 
-    // Cinematic Title Card
     UI.titleCard(g, t, {
       lines: ['WHY DOES YOUR BRAIN', 'MAKE YOU OVERTHINK?'],
       sub: 'MEMORY PULSE  ·  EPISODE 04',
@@ -287,22 +282,21 @@ registerShot('s012', {
 // s013 — "Is your brain trying to protect you?" (Shield / protective impulse)
 registerShot('s013', {
   draw(g, t, info) {
-    const { GY } = thoughtSpace(g, t, { z: 1.1, x: 0 });
-    // Protective glowing aura / shield in front of Alex
+    const { GY } = thoughtSpace(g, t, { z: 1.15 + 0.05 * (t / info.dur), x: 0 });
     const shieldP = ease.out(prog(t, 0.2, 0.8));
     g.save();
     g.strokeStyle = '#38bdf8';
-    g.lineWidth = 4;
+    g.lineWidth = 4.5;
     g.beginPath();
-    g.arc(E.W * 0.54, E.H * 0.52, 140 * shieldP, -Math.PI * 0.35, Math.PI * 0.35);
+    g.arc(E.W * 0.55, E.H * 0.52, 160 * shieldP, -Math.PI * 0.35, Math.PI * 0.35);
     g.stroke();
-    glow(g, E.W * 0.54, E.H * 0.52, 160 * shieldP, '#38bdf8', 0.25);
+    glow(g, E.W * 0.55, E.H * 0.52, 180 * shieldP, '#38bdf8', 0.35);
     g.restore();
 
     drawFigure(g, {
-      x: E.W * 0.48, y: GY - 20, s: 1.4, facing: 1, outfit: ALEX,
-      pose: POSES.ready, expr: 'determined',
-      rim: { color: '#38bdf8', dir: [1, 0], w: 4 }
+      x: E.W * 0.46, y: GY - 20, s: 1.65, facing: 1, outfit: ALEX,
+      pose: breathe(POSES.ready, t), expr: 'determined',
+      rim: { color: '#38bdf8', dir: [1, 0], w: 4.5 }
     });
   }
 });
@@ -313,19 +307,18 @@ registerShot('s014', {
     const { GY } = thoughtSpace(g, t, { z: 1.2, x: 0 });
     const fade = 1 - ease.inOut(prog(t, 0.4, info.dur * 0.9));
 
-    // Phantom shadow figures dissolving away
     g.save();
-    g.globalAlpha = fade * 0.4;
+    g.globalAlpha = fade * 0.45;
     drawFigure(g, {
-      x: E.W * 0.72, y: GY - 20, s: 1.5, facing: -1,
-      outfit: { top: 'none' }, pose: POSES.crossArms, expr: 'neutral'
+      x: E.W * 0.74, y: GY - 20, s: 1.7, facing: -1,
+      outfit: { top: 'none' }, pose: breathe(POSES.crossArms, t, 0.6), expr: 'neutral'
     });
     g.restore();
 
     drawFigure(g, {
-      x: E.W * 0.38, y: GY - 20, s: 1.4, facing: 1, outfit: ALEX,
-      pose: POSES.shrug, expr: 'confused',
-      rim: { color: '#fbbf24', dir: [0, -1], w: 4 }
+      x: E.W * 0.36, y: GY - 20, s: 1.65, facing: 1, outfit: ALEX,
+      pose: breathe(POSES.shrug, t), expr: 'confused',
+      rim: { color: '#fbbf24', dir: [0, -1], w: 4.5 }
     });
   }
 });

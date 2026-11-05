@@ -82,7 +82,7 @@ async function sheet(shots, file, cols = 3, scale = +args.scale || 0.5) {
 
 // ---------------------------------------------------------------- modes
 if (args.sheet) {
-  const dir = path.join(BUILD, 'sheets'); fs.mkdirSync(dir, { recursive: true });
+  const dir = args.sheetDir ? path.resolve(BUILD, args.sheetDir) : path.join(BUILD, 'sheets'); fs.mkdirSync(dir, { recursive: true });
   let list = meta.shotList.map(s => [s.id, +(s.start + (s.end - s.start) * 0.45).toFixed(2)]);
   if (args.shots) { const want = String(args.shots).split(','); list = list.filter(([id]) => want.includes(id)); }
   const per = +(args.per || 12);
