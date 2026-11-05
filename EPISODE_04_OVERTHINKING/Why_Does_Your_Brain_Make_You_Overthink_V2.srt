@@ -1,0 +1,300 @@
+1
+00:00:00,500 --> 00:00:04,288
+Last Tuesday, you said something to a friend.
+
+2
+00:00:04,487 --> 00:00:10,133
+It was small. A joke. A pause. A sentence that came out slightly wrong.
+
+3
+00:00:10,430 --> 00:00:15,004
+And hours later, lying in the dark, you are still there.
+
+4
+00:00:15,245 --> 00:00:18,818
+You replay the conversation, word by word.
+
+5
+00:00:19,006 --> 00:00:21,507
+You wonder if they noticed.
+
+6
+00:00:21,639 --> 00:00:25,784
+You imagine ten different ways it could have gone.
+
+7
+00:00:26,002 --> 00:00:28,718
+And then you imagine ten more.
+
+8
+00:00:28,861 --> 00:00:31,648
+Your mind never stops thinking.
+
+9
+00:00:31,795 --> 00:00:36,869
+The day is over. The room is quiet. Everyone else has moved on.
+
+10
+00:00:37,136 --> 00:00:42,210
+But your brain is still in that conversation, running it again.
+
+11
+00:00:42,477 --> 00:00:43,334
+Why?
+
+12
+00:00:43,380 --> 00:00:46,524
+Is your brain trying to protect you?
+
+13
+00:00:46,690 --> 00:00:50,763
+Or is it creating problems that were never there?
+
+14
+00:00:50,978 --> 00:01:03,055
+Psychologists call one version of this rumination: thinking that circles back on itself, returning to the same painful ground without ever reaching a conclusion.
+
+15
+00:01:03,691 --> 00:01:09,837
+Another version is worry. Thinking pointed forward, at what might happen next.
+
+16
+00:01:10,161 --> 00:01:14,949
+One looks back. One looks forward. Both feel like thinking.
+
+17
+00:01:15,201 --> 00:01:18,417
+And both can keep you awake at night.
+
+18
+00:01:18,586 --> 00:01:21,016
+Here is how a loop starts.
+
+19
+00:01:21,144 --> 00:01:25,432
+A single thought arrives. Did I say something wrong?
+
+20
+00:01:25,657 --> 00:01:31,875
+That thought asks for an answer. So your mind supplies one. And then judges it.
+
+21
+00:01:32,202 --> 00:01:35,490
+Now there are two thoughts. Then four.
+
+22
+00:01:35,663 --> 00:01:42,023
+Each one generates the next, like a chain of dominoes you cannot stop setting up.
+
+23
+00:01:42,358 --> 00:01:45,217
+Notice what is missing. An exit.
+
+24
+00:01:45,367 --> 00:01:50,727
+A solved problem closes. A thought loop does not close. It repeats.
+
+25
+00:01:51,009 --> 00:01:57,798
+And because it feels unfinished, your brain keeps returning to it, trying to finish it.
+
+26
+00:01:58,156 --> 00:02:01,729
+To understand why, we need to look inside.
+
+27
+00:02:01,917 --> 00:02:14,424
+In the nineteen nineties and two thousands, neuroscientists began mapping a set of brain regions that become more active when you are not focused on the outside world.
+
+28
+00:02:15,082 --> 00:02:18,369
+It is called the default mode network.
+
+29
+00:02:18,542 --> 00:02:25,260
+It is active when you daydream, remember, imagine the future, or think about yourself.
+
+30
+00:02:25,614 --> 00:02:33,118
+Researchers have linked activity in this network to self-generated thought, including rumination.
+
+31
+00:02:33,512 --> 00:02:38,301
+But here is the careful part. A correlation is not a cause.
+
+32
+00:02:38,553 --> 00:02:44,199
+The default mode network is not a broken part that makes you overthink.
+
+33
+00:02:44,496 --> 00:02:52,786
+It is a system for imagining and remembering. Overthinking may be that system running without a destination.
+
+34
+00:02:53,222 --> 00:02:56,510
+There is a second player. Uncertainty.
+
+35
+00:02:56,683 --> 00:03:05,116
+Psychologists describe intolerance of uncertainty. The tendency to find I do not know genuinely uncomfortable.
+
+36
+00:03:05,559 --> 00:03:11,991
+For some people, an unanswered question feels like an itch that must be scratched.
+
+37
+00:03:12,330 --> 00:03:14,545
+So the mind asks again.
+
+38
+00:03:14,662 --> 00:03:15,948
+And again.
+
+39
+00:03:16,016 --> 00:03:22,162
+Your brain would rather have an answer, even a bad one, than no answer at all.
+
+40
+00:03:22,486 --> 00:03:27,202
+Then there is metacognition. Thinking about your thinking.
+
+41
+00:03:27,451 --> 00:03:33,168
+In small doses it is a superpower. It lets you check your own reasoning.
+
+42
+00:03:33,469 --> 00:03:38,757
+But it can also become a loop of its own. Worrying about worrying.
+
+43
+00:03:39,036 --> 00:03:46,897
+And stress turns the volume up. Under pressure, attention narrows, and it becomes harder to step back.
+
+44
+00:03:47,311 --> 00:03:50,527
+None of this is a disorder by itself.
+
+45
+00:03:50,696 --> 00:03:56,270
+Rumination is something every human brain does. It is not a diagnosis.
+
+46
+00:03:56,564 --> 00:03:58,422
+But it has a cost.
+
+47
+00:03:58,519 --> 00:04:06,238
+Sleep is often the first thing to go. The bed becomes a meeting room, and the meeting has no agenda.
+
+48
+00:04:06,644 --> 00:04:12,719
+Concentration slips, because part of your attention is always somewhere else.
+
+49
+00:04:13,038 --> 00:04:19,399
+Conversations get harder, because you are partly listening, and partly reviewing.
+
+50
+00:04:19,734 --> 00:04:27,809
+And decisions slow down, because every option arrives with a rehearsal of everything that could go wrong.
+
+51
+00:04:28,234 --> 00:04:31,522
+The cost is not dramatic. It is quiet.
+
+52
+00:04:31,695 --> 00:04:37,769
+It is a hundred small withdrawals of attention from the life in front of you.
+
+53
+00:04:38,089 --> 00:04:42,877
+And because nothing visibly breaks, it can go on for years.
+
+54
+00:04:43,129 --> 00:04:47,346
+Here is the turning point. And it is a strange one.
+
+55
+00:04:47,568 --> 00:04:54,071
+The moment you realise that thinking about a problem is not the same as solving it.
+
+56
+00:04:54,413 --> 00:04:58,415
+Repetition feels productive. It feels like work.
+
+57
+00:04:58,626 --> 00:05:06,988
+But rumination rarely produces new information. It produces the same information, with more emotion attached.
+
+58
+00:05:07,428 --> 00:05:10,715
+So psychology offers a different move.
+
+59
+00:05:10,888 --> 00:05:24,181
+First, name it. Not I am an anxious person, but I am having a rumination loop. That small distance is called decentering, and it changes how much the thought can push you around.
+
+60
+00:05:24,880 --> 00:05:35,529
+Second, postpone, do not suppress. Set a time later today for worrying. When the thought arrives before then, write it down, and let it wait.
+
+61
+00:05:36,089 --> 00:05:44,522
+Third, ask a better question. Not what did they think of me, but what would I tell a friend who asked me this?
+
+62
+00:05:44,966 --> 00:05:54,614
+Fourth, put it in the body. A walk. A shower. Slow breathing. When attention has somewhere real to go, the loop loses its grip.
+
+63
+00:05:55,122 --> 00:06:03,483
+And fifth, accept the uncertainty on purpose. Say it plainly. I do not know, and I can live with not knowing.
+
+64
+00:06:03,923 --> 00:06:06,997
+This is the part worth remembering.
+
+65
+00:06:07,158 --> 00:06:13,161
+Your thoughts are real. They are events in your brain. They are not nothing.
+
+66
+00:06:13,477 --> 00:06:15,693
+But they are not facts.
+
+67
+00:06:15,809 --> 00:06:21,169
+A thought is a guess your brain makes, using old data, in the dark.
+
+68
+00:06:21,451 --> 00:06:25,382
+Sometimes it is right. Sometimes it is a story.
+
+69
+00:06:25,589 --> 00:06:37,095
+The overthinking mind is usually not your enemy. It is an old protective system, trying to keep you safe, in a world that no longer has the same dangers.
+
+70
+00:06:37,701 --> 00:06:40,416
+You do not have to silence it.
+
+71
+00:06:40,559 --> 00:06:45,633
+You only have to stop treating every thought as an instruction.
+
+72
+00:06:45,900 --> 00:06:53,476
+So tonight, when the conversation starts again in your head, and it will, try asking one question.
+
+73
+00:06:53,874 --> 00:06:58,448
+Is this a thought I am having, or a fact I have checked?
+
+74
+00:06:58,689 --> 00:07:06,050
+If you want more of these quiet explanations of how your mind works, subscribe to Memory Pulse.
+
+75
+00:07:06,437 --> 00:07:12,941
+And tell me in the comments. What is the one thought your brain keeps returning to?
+

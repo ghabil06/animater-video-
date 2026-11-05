@@ -10,3 +10,5 @@ EPISODE_04_OVERTHINKING/studio/bin/
 build/
 out/
 timeline/
+*.wav
+.claude-plugin/
